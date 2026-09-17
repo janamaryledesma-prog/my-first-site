@@ -1,15 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <link rel= "stylesheet" href="css/style.css" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Johnna Mary Ledesma | Web Developer &amp; BSIS Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Welcome to the personal portfolio of Johnna Mary Ledesma, an Information Systems student showcasing web development projects and work.">
+  <link rel="canonical" href="https://janamaryledesma-prog.github.io/About-me/index.html">
+    
+  <!-- Open Graph / Facebook / Discord -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Johnna Mary Ledesma Portfolio">
+  <meta property="og:title" content="Johnna Mary Ledesma | Web Developer &amp; BSIS Portfolio">
+  <meta property="og:description" content="Explore web development projects and skills by Johnna Mary Ledesma, Information Systems student.">
+  <meta property="og:image" content="https://janamaryledesma-prog.github.io/About-me/assets/hero-md.jpg">
+  <meta property="og:url" content="https://janamaryledesma-prog.github.io/About-me/index.html">
+    
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Johnna Mary Ledesma | Web Developer &amp; BSIS Portfolio">
+  <meta name="twitter:description" content="Explore web development projects and skills by Johnna Mary Ledesma, Information Systems student.">
+  <meta name="twitter:image" content="https://janamaryledesma-prog.github.io/About-me/assets/hero-md.jpg">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>My name is <strong> Johnna Mary </strong> This is my first page.</p>
 
-    
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <a href="index.html" class="logo">Johnna Mary Ledesma</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="nav" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="index.html" class="current" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <article>
+      <h2>Welcome</h2>
+      <p>Welcome to my digital space! I'm Johnna Mary Ledesma, a BSIS student and aspiring developer. Take a look around to learn more about my projects and background.</p>
+    </article>
+
+    <picture>
+      <source type="image/webp"
+              srcset="assets/hero-sm.webp 400w,
+                      assets/hero-md.webp 800w,
+                      assets/hero-lg.webp 1600w"
+              sizes="(max-width: 600px) 90vw, 800px">
+      <img src="assets/hero-md.jpg"
+           alt="Johnna Mary Ledesma workspace setup with code on screen"
+           width="800" height="450"
+           loading="lazy">
+    </picture>
+
+    <!-- Featured Projects Grid Section -->
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card card-featured">
+          <h3>Featured Project</h3>
+          <p>Expanded description for the main project.</p>
+        </article>
+        <article class="card"><h3>Project 2</h3><p>Short description.</p></article>
+        <article class="card"><h3>Project 3</h3><p>Short description.</p></article>
+        <article class="card"><h3>Project 4</h3><p>Short description.</p></article>
+        <article class="card"><h3>Project 5</h3><p>Short description.</p></article>
+        <article class="card"><h3>Project 6</h3><p>Short description.</p></article>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section>
+      <h2>Featured Video</h2>
+      <video controls poster="assets/poster.jpg" preload="metadata" width="800">
+        <source src="assets/intro.mp4" type="video/mp4">
+        <track kind="captions" src="assets/captions.vtt" srclang="en" label="English" default>
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Johnna Mary Ledesma</p>
+  </footer>
+
 </body>
 </html>

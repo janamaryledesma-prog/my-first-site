@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Johnna Mary Ledesma</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Get in touch with Johnna Mary Ledesma. Contact for web development projects, database management, and system design collaborations.">
+  <link rel="canonical" href="https://janamaryledesma-prog.github.io/About-me/contact.html">
+    
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Johnna Mary Ledesma">
+  <meta property="og:description" content="Get in touch with Johnna Mary Ledesma for collaborations and project inquiries.">
+  <meta property="og:image" content="https://janamaryledesma-prog.github.io/About-me/assets/hero-md.jpg">
+  <meta property="og:url" content="https://janamaryledesma-prog.github.io/About-me/contact.html">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">Johnna Mary Ledesma</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="nav" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="current" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Me</h1>
+    <address>
+      Email: <a href="mailto:janamaryledesma@gmail.com">janamaryledesma@gmail.com</a>
+    </address>
+
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading" class="sr-only">Contact Form</h2>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend>Contact Form</legend>
+          <p>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required minlength="2" autocomplete="name">
+          </p>
+          <p>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </p>
+          <p>
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9\-\s\+\(\)]{7,}" autocomplete="tel">
+          </p>
+          <p>
+            <label for="source">How did you hear about me?</label>
+            <select id="source" name="source">
+              <option value="" disabled selected>-- Select an option --</option>
+              <option value="search-engine">Search Engine</option>
+              <option value="social-media">Social Media</option>
+              <option value="referral">Friend or Colleague</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </p>
+          <p class="form-checkbox-group">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I agree to be contacted.</label>
+          </p>
+          <p>
+            <button type="submit">Send Message</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Johnna Mary Ledesma</p>
+  </footer>
+
+</body>
+</html>
